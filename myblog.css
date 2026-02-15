@@ -1,0 +1,67 @@
+body{ /*dar formato al body*/
+    background-color: lavenderblush;
+    /*cambiar fuente de todo lo que esta en body*/
+    font-family: 'AngsanaUPC', serif; /*tipo de letra*/
+}
+
+h1{/*alienar al centro, si tengo mas de h1 y asi se separa por , asi h1, h2, etc*/
+    text-align: center; 
+}
+
+p{ /*darle formato a mis parrafos*/
+    color:black;
+    font-size: 24px; /*tamaño del texto*/
+    text-align: center;
+}
+
+/*div h2{} hace que unicamente el h2 dentro del div se modifique y no otro si es que hay mas*/
+/*ID's unicos y por elemento, las clases son repetibles*/
+#parrafo-especial{
+    font-size: 1.5em;
+}
+/*seleccionar link e imagen para cambiar su formato tmb*/
+a, img{
+    display: block; /*uno arriba de otro*/
+}
+
+a{ 
+    margin: 40px 20px; /*dar espacio arriba, abajo y a los lados*/
+    text-decoration: none; /*quitar el subrayado*/
+    color:darkmagenta;
+}
+
+a:hover{ /*para que el link cambie de color cuadno se pasa el raton por arriba de ese texto*/
+    color:darkmagenta;
+}
+
+img{ /*darle forma a la imagen y centrarla*/
+    width: 70%;
+    margin: auto;
+}
+
+nav{/*darle formato a lo que se encuentra en mi parte de navegación*/
+    color:hotpink;
+    font-size: 1.3em;
+}
+
+h2{
+    color:darkviolet;
+    font-size: 1.5em;
+}
+
+#parrafo-personal{
+    color:black;
+    font-size: 1.5em;
+    text-align:left;
+}
+
+h3{
+    color:deeppink;
+    text-align:center;
+}
+
+#parrafo-ent{
+    color:black;
+    font-size: 1.2em;
+    text-align:center;
+}
