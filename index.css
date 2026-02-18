@@ -1,0 +1,23 @@
+#carouselExampleCaptions{
+    width: 75%;
+    margin: auto;
+}
+
+h1{
+    text-align: center;
+    margin:auto;
+}
+
+body{
+    background-color:linen;
+}
+
+h4{
+    text-align: center;
+    color:deeppink;
+}
+
+p{
+    text-align: center;
+    color: #000;
+}
