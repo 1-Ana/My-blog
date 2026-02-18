@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--Ana Paula Barrón Torres-->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My blog con Bootstrap</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="index.css"> <!--vincula el css al html-->
+
+</head>
+<body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    <!--links para usar lso componentes de bootstrap-->
+    <h1 style="color:deeppink">Mi blog</h1>
+    <!--navegación dentro de la página web-->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Mi blog con bootstrap</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    
+                    <li class="nav-item">
+                        <a class="nav-link" href="#collapseTwo">Contacto</a> 
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Partes
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#collapse0ne">Info personal</a></li>
+                            <li><a class="dropdown-item" href="#collapseTwo">Contacto</a></li>
+                            <li><a class="dropdown-item" href="#collapseThree">Gustos o preferencias</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!--es para las fotos que están al principio es un carrusel-->
+    <div id="carouselExampleCaptions" class="carousel slide">
+        <div id="carouselExampleCaptions" class="carousel slide mb-5">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="Dosvelas.jpg" class="d-block w-100" style="height:600px; object-fit:cover;" alt="LibroFav">
+                <div class="carousel-caption d-none d-md-block">
+                    <h3 style="color:cornflowerblue">Mi libro favorito</h3>
+                    <p style="color:floralwhite">Este es mi libro favorito "Dos velas para el diablo", aunque ya tiene más de 10 años que lo leí.</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="playa.jpeg" class="d-block w-100" style="height:600px; object-fit:cover;" alt="playita">
+                <div class="carousel-caption d-none d-md-block">
+                    <h3 style="color:black">Lugar que me encanta</h3>
+                    <p style="color:black">Me encanta la playa, aunque voy una vez al año pero me encanta el mar.</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="mascotas.jpg" class="d-block w-100" style="height:600px; object-fit:cover;" alt="mascotas">
+                <div class="carousel-caption d-none d-md-block">
+                    <h3>Mascotas que tengo</h3>
+                    <p>Mi perrita es la negrita Osa, pero hay más.</p>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+        </div>
+    </div>
+
+    <!--Mejora que implemente de bootstrap, es la parte del final donde se despliega-->
+    <div class="accordion" id="accordionExample">
+        <div class="accordion-item">
+            <h2 class="accordion-header">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                Información Personal
+                </button>
+            </h2>
+            <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                <div class="accordion-body" style="color:darkslategrey">
+                    <article>
+                        <h4>Mi trayectoria académica</h4>
+                        <p>Estudie la primaria en la escuela Francisco Medina Ascencio, la secundaria en la José Cornejo Franco, <br>
+                        la prepa en la udg regional de tepa y curso actualmente la universidad. Y ya eso es todo.</p>
+                    </article>
+                    <article>
+                        <h4>Mis metas futuras</h4>
+                        <p>Aún no tengo claro que haré, pero me gustaría dedicarme en el campo de ciberseguridad o de la nube.</p>
+                    </article>
+                </div>
+            </div>
+        </div>
+        <div class="accordion-item">
+            <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                Contacto
+                </button>
+            </h2>
+            <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                <div class="accordion-body" style="color:darkslategrey">
+                    <article>
+                        <h4>Canales para contactarme</h4>
+                        <p>Correo: ana.barron0974@gmail.com <br> GitHub: 1-Ana</p>
+                    </article>
+                </div>
+            </div>
+        </div>
+        <div class="accordion-item">
+            <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                Intereses Personales
+                </button>
+            </h2>
+            <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                <div class="accordion-body" style="color:darkslategrey">
+                    <article>
+                        <h4>Mi libro favorito</h4>
+                        <p>Mi libro favorito se llama "Dos velas para el diablo", en el tiempo en el que lo leí me gusto tanto que lo leí 3 veces.</p>
+                    </article>
+                    <article>
+                        <h4>Un poco más de lo que me gusta</h4>
+                        <p>Me gusta el frappe, me gustan los atardeceres pero sobre todo los amaneceres, me gusta comer, me gusta preparar postres de manera ocasional, <br>
+                        me gusta salir con mi novio, escuchar música, resolver sopas de letra, ver paisajes, entre más cosas.</p>
+                    </article>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+<footer> <!--mi nombre y link a mi github-->
+    <p>Creado por Ana Barrón
+      <br><a href= "https://github.com/1-Ana" target = "_blank">Contacto</a>  
+    </p>
+</footer>
+
+</html>
